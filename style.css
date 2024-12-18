@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: brightness(80%);
+    background-image: url("pic.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.clock{
+    /* background-color: aqua; */
+    gap: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 28vh;
+    width: 32vw;
+    backdrop-filter: blur(500px);
+    background: hsla(0, 0%, 100%, 0.11);
+    /* border: 1px solid white; */
+
+
+}
+p{
+    color: aliceblue;
+    font-size: 2vw;
+}
+span{
+    font-weight: 600;
+}
+
+input{
+    width: 15vw;
+    height: 6vh;
+    text-align: center;
+    font-size: 2vw;
+    background: hsla(0, 0%, 100%, 0.11);
+    outline: none;
+    color: rgb(74, 255, 2);
+    
+}
+input:hover{
+    background-color: rgba(255, 255, 255, 0.301);
+}
+.btns button{
+    height: 5vh;
+    width: 7.5vw;
+    background-color: rgba(255, 255, 255, 0.264);
+    font-size: 1vw;
+    letter-spacing: .2vh;
+    word-spacing: .5vh;
+    color: white;
+    font-weight: 600;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+button:active{
+    background-color: rgba(17, 155, 17, 0.664);
+    color: white;
+}
+@media (max-width:300px) and (min-width:0px){
+
+    .clock{
+        /* background-color: aqua; */
+        gap: 2vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 24vh;
+        width: 65vw;
+        backdrop-filter: blur(500px);
+        background: hsla(0, 0%, 100%, 0.11);
+    }
+
+    p{
+        color: aliceblue;
+        font-size: 4vw;
+    }
+
+    input{
+        width: 40vw;
+        height: 4vh;
+        text-align: center;
+        font-size: 5vw;
+        background: hsla(0, 0%, 100%, 0.11);
+        outline: none;
+        color: rgb(74, 255, 2);
+        
+    }
+
+    .btns button{
+        height: 5vh;
+        width: 15vw;
+        background-color: rgba(255, 255, 255, 0.264);
+        font-size: 1.7vw;
+        letter-spacing: .2vh;
+        word-spacing: .2vh;
+        color: white;
+        font-weight: 400;
+    }
+
+
+
+
+
+
+
+}
